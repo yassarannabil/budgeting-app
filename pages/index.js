@@ -10,7 +10,6 @@ import EditModal from '../components/EditModal'
 import { FaTrash, FaEdit } from 'react-icons/fa'
 import 'react-datepicker/dist/react-datepicker.css'
 
-// Tambahkan di bagian atas file, bersama import lainnya:
 import Link from 'next/link'
 
 function Dashboard() {
@@ -210,7 +209,7 @@ function Dashboard() {
       </div>
 
       <div className="mb-6 text-right">
-        <a href="/input" className="text-blue-600 underline text-sm">+ Tambah Transaksi</a>
+        <Link href="/input" className="text-blue-600 underline text-sm">+ Tambah Transaksi</Link>
       </div>
 
       <h2 className="text-lg font-semibold mb-2">Histori Transaksi</h2>
