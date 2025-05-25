@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
 import { withAuth } from '../lib/withAuth'
-import { subDays, startOfWeek, startOfMonth, startOfYear, isAfter, isBefore } from 'date-fns'
+import { startOfWeek, startOfMonth, startOfYear, isAfter, isBefore } from 'date-fns'
 import { toDate } from 'date-fns-tz'
 import { startOfDay, endOfDay } from 'date-fns'
 import DatePicker from 'react-datepicker'
@@ -9,6 +9,9 @@ import PieChartPengeluaran from '../components/PieChartPengeluaran'
 import EditModal from '../components/EditModal'
 import { FaTrash, FaEdit } from 'react-icons/fa'
 import 'react-datepicker/dist/react-datepicker.css'
+
+// Tambahkan di bagian atas file, bersama import lainnya:
+import Link from 'next/link'
 
 function Dashboard() {
   const [isClient, setIsClient] = useState(false)
